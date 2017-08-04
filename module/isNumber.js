@@ -18,4 +18,4 @@
  * 	isNumber(/anything else/);  // => false
  *
  */
-export default (value) => typeof value === 'number';
+export default (value) => !isNaN(Number(value) - parseFloat(value));
